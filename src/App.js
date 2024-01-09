@@ -14,7 +14,8 @@ import CategoryPage from './Pages/category.jsx';
 import Products from './Pages/Products.jsx';
 import Productdetail from './Pages/Productdetail.jsx';
 import Addtocart from './Pages/addtocart.jsx';
-import Dashboard from './Pages/dashboard.jsx';
+import Dashboard from './Pages/admin/dashboard.jsx';
+import ProductsManagement from './Pages/admin/products.jsx';
 
 const App = () => {
   const [theme, setTheme] = useState('light')
@@ -65,7 +66,9 @@ const App = () => {
 
                 <Route path='/productdetail/:id' element={<Productdetail />} /> 
                 
-                <Route path='/dashboard' element={<Guard><Dashboard /></Guard> }/>
+               
+                <Route path='/dashboard/users' element={<Guard><Dashboard /></Guard> }/>
+                <Route path='/dashboard/products' element={<Guard><ProductsManagement /></Guard> }/>
 
               </Route>
             </Routes>

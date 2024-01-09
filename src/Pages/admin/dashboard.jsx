@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const Dashboard = () => {
-
-
+   
     let initForm = {
         name: "",
         gmail: "",
@@ -46,17 +45,15 @@ const Dashboard = () => {
     const submit = async () => {
         {
             console.log(formData, "==formdata==");
+            // console.log(update,'--update');
 
             // {Validation Password length 8 digits}
 
-            if (formData.password.length >= 8) {
-                console.log("Password exists");
+            if (formData.password.length <= 8) {
+                console.log("password must be 8 digits");
                 return
             }
-            else {
-                console.log("password must be 8 digits");
-            }
-
+           
             // {Validation Gmail is Valid or Not}
 
             if (!ValidEmail(formData.gmail)) {
@@ -66,7 +63,7 @@ const Dashboard = () => {
                 console.log("Valid");
                 setError(null);
             }
-
+          
             let url = update ? 'http://localhost:9000/updateuser/' + form_id : 'http://localhost:9000/saveUser'
             let result = await fetch(url,
                 {
@@ -75,11 +72,8 @@ const Dashboard = () => {
                     body: JSON.stringify(formData)
                 })
                 .then(res => res.json())
-            setFormData(result)
-            if (update) {
+            
                 fetchData()
-            }
-
 
             // {Vadilation gmail already exist or not}
 
@@ -113,7 +107,6 @@ const Dashboard = () => {
     // {Items save in a table}
 
     const add_button = async () => {
-
         setFormData(data)
         setFormData(initForm)
         setUpdate(false)
