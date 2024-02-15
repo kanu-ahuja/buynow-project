@@ -5,10 +5,6 @@ import React, { useEffect, useState } from 'react'
 // the page for product management
 const ProductsManagement = () => {
 
-    /// first get existing product list 
-
-    // then create funactionality to product edit/update/delete
-
     const [formData, setFormData] = useState('')
     const [getdata, setGetdata] = useState('')
     const [multerdata, setMulterdata] = useState('')
@@ -22,7 +18,6 @@ const ProductsManagement = () => {
 
     async function fetchAlldata() {
         let getalldata = await fetch('http://localhost:9000/getProduct').then(res => res.json())
-        // console.log(getalldata, "--getalldata--");
         setGetdata(getalldata)
     }
 
@@ -37,7 +32,6 @@ const ProductsManagement = () => {
             .then(async (deleteUser) => {
                 await fetchAlldata()
             }).catch(error => console.warn(error))
-        // console.log(delete_product, "==delete_product");
     }
 
     const edit_button = (id, image, price, rating, title, description, stock, color, sku, category) => {
@@ -123,8 +117,8 @@ const ProductsManagement = () => {
                                         <tr>
                                             <td>{item.id}</td>
                                             <td>{((item.image).startsWith('http://') || (item.image).startsWith('https://')) ?
-                                                (<><img src={item.image} /></>) :
-                                                (<><img src={`http://localhost:9000/uploads/${item.image}`} />
+                                                (<><img src={item.image}  alt='error'/></>) :
+                                                (<><img src={`http://localhost:9000/uploads/${item.image}`}  alt='error'/>
                                                 </>)
                                             }</td>
                                             <td>{item.price}</td>
@@ -150,7 +144,7 @@ const ProductsManagement = () => {
                         <label className='form_heading'>Image</label>
                         {
                             formData.image &&
-                            <img src={`http://localhost:9000/uploads/${formData.image}`} />
+                            <img src={`http://localhost:9000/uploads/${formData.image}`}  alt='error'/>
 
                         }
                         <input type='file' name='image' className='products_form' placeholder='Enter the image url..' onChange={(e) => (setImage(e.target.files[0]))} />

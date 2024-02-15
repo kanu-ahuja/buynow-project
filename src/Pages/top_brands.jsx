@@ -19,6 +19,7 @@ const Top_brands = () => {
             star: "stars.svg",
             image: "topproduct1.png",
             new: "New",
+            type:"feature"
 
         },
         {
@@ -29,6 +30,7 @@ const Top_brands = () => {
             star: "stars.svg",
             image: "topproduct2.png",
             new: "New",
+            type:"feature"
         },
         {
             id: uuidv4(),
@@ -37,6 +39,7 @@ const Top_brands = () => {
             desc: "TWS Earbuds with Mic",
             star: "stars.svg",
             image: "topproduct3.png",
+            type:"feature"
         },
         {
             id: uuidv4(),
@@ -45,10 +48,9 @@ const Top_brands = () => {
             desc: "boAt Wave Lite Smartwa..",
             star: "stars.svg",
             image: "topproduct4.png",
+            type:"feature"
         },
-
     ]
-
     return (
         <>
             <section>

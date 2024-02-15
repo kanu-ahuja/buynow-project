@@ -9,7 +9,7 @@ const Shopping_now = () => {
                 <div className='container'>
                     <div className='Shopping_now'>
                         <div className='Shopping_now_card'>
-                            <img src={img2} alt='error' className='Shopping_now_image'></img>
+                            <img src={img2} alt='error' className='Shopping_now_image' />
                             <div className='Shopping_now_text'>
                                 <h1 className='xxl_body_text shopping_now_heading'>Products for your need start shopping now</h1>
                                 <h5 className='shopping_now_line'></h5>

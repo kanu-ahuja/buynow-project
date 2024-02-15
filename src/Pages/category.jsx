@@ -26,8 +26,7 @@ const CategoryPage = () => {
     const [priceRange, setPriceRange] = useState(0)
     const [range, setrange] = useState(5000)
 
-    // const [singleproduct, setSingleproduct] = useState()
-
+    const [dots,setDots] = useState([])
     useEffect(() => {
         getProductBycat()
         const fetchCatData = async () => setCategories(await getAllcategory()) // init function
@@ -61,7 +60,21 @@ const CategoryPage = () => {
     const arrow = () => {
         setDropdown(prev => !prev)
     }
-
+    let product_color = [
+        {
+            color : "Green",
+        },
+        {
+            color : "red",
+        },
+        {
+            color : "Yellow",
+        },
+        {
+            color : "Orange",
+        },
+    ]
+   
     return (
         <>
             <div className="container">
@@ -85,16 +98,13 @@ const CategoryPage = () => {
                                     <h3 className='product_list'>Category</h3>
                                     <img src={arrowdown} className='arrow' alt='error' id='arrow' onClick={arrow} />
                                 </div>
-
                                 {
-
                                     dropdown && categories.length > 0 && categories.map((item, index) => {
                                         return (<Fragment key={`${item}_category`}>
                                             <a onClick={() => getProductByCategory(item)}>{item}</a>
                                         </Fragment>);
                                     })
                                 }
-
                                 <button className='view_button'>View all</button>
                             </div>
                             <div className='products_divider'></div>
@@ -127,20 +137,14 @@ const CategoryPage = () => {
                                     <img src={arrowdown} className='arrow' alt='error' />
                                 </div>
                                 <div className='color_dots'>
-                                    <img src={img1} alt='error' />
-                                    <img src={img2} alt='error' />
-                                    <img src={img3} alt='error' />
-                                    <img src={img4} alt='error' />
-                                    <img src={img5} alt='error' />
-                                    <img src={img6} alt='error' />
-                                </div>
-                                <div className='color_dots'>
-                                    <img src={img7} alt='error' />
-                                    <img src={img8} alt='error' />
-                                    <img src={img9} alt='error' />
-                                    <img src={img10} alt='error' />
-                                    <img src={img11} alt='error' />
-                                    <img src={img12} alt='error' />
+                                  {
+                                    product_color.map((item,index)=>{
+                                        return(
+                                            <input type='color' className='color_alldots' />
+                                        )
+                                    })
+                                }
+                                
                                 </div>
                                 <div>
                                     <h5 className='all_item'>+12 more</h5>
@@ -187,7 +191,7 @@ const CategoryPage = () => {
                                 if (item.price < priceRange) return item;
                             }).map((item, index) => {
                                 return (<>
-                                    <Featurecard product={item} id={item?.id} />
+                                    <Featurecard product={item} id={item?.id}/>
                                 </>)
                             })}
                         </div>

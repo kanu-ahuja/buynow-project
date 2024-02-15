@@ -5,12 +5,11 @@ export const getAllcategory = async () => {
         .then(res => res.json())
 }
 
-
 // product get by category
 
 export const getProductbyCat = (category) => new Promise((resolve,reject)=>{
-    fetch('https://dummyjson.com/products/category/'+category)
+    fetch('https://dummyjson.com/products/category/'+ category)
     .then(res => res.json())
     .then(res=> resolve(res))
     .catch(err => reject(err))           
-})
+})  

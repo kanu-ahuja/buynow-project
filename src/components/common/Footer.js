@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='container'>
           <div className='subscribe_to_newsletter'>
             <div className='newletter_text'>
-              <img src={newletter} className='newletter_image' />
+              <img src={newletter} className='newletter_image' alt='error'/>
 
               <div>
                 <h1 className='xl_body_text subscribe_text'>Subscribe to our newsletter</h1>
@@ -40,7 +40,7 @@ const Footer = () => {
               <div className='footer_brand'>
                 <div className='footer_about'>
                   <h3 className='footer_lg_text'>About</h3>
-                  <img src={footericon} className='footer_icon' />
+                  <img src={footericon} className='footer_icon'  alt='error'/>
                 </div>
                 <div>
                   <p className='footer_small_text footer_Big_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elit sem tortor dui mattis vulputate fermentum. Turpis nisi, nulla interdum luctus.</p>
@@ -67,8 +67,8 @@ const Footer = () => {
                 <div>
                   <h4 className='footer_small_text dowload_text'>Download the app</h4>
                   <div className='download_app_images'>
-                    <img src={dowload1} className='download_image' />
-                    <img src={dowload2} className='download_image' />
+                    <img src={dowload1} className='download_image'  alt='error'/>
+                    <img src={dowload2} className='download_image'  alt='error'/>
                   </div>
                 </div>
               </div>

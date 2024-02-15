@@ -1,20 +1,13 @@
 import React, { Fragment } from 'react'
-
 import Buttoncart from '../components/Buttons/Buttoncart'
 import Featurecard from '../components/products/Featurecard'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { v4 as uuidv4 } from "uuid";
-
-
 // Import Swiper styles
 import 'swiper/css';
 
-
-
 const Features_product = () => {
-
 
   let product = [
     {
@@ -24,7 +17,7 @@ const Features_product = () => {
       desc: "Boult Audio Bass D3 Buds Lightweight Stereo",
       image: "featuresProduct1.png",
       icon: "color.svg",
-
+      type : "feature"
     },
     {
       id: uuidv4(),
@@ -33,6 +26,7 @@ const Features_product = () => {
       desc: "Bluetooth Wireless Ear Head phones (35Hrs Playtime)",
       image: "featuresProduct2.png",
       icon: "color.svg",
+      type : "feature"
     },
     {
       id: uuidv4(),
@@ -41,6 +35,7 @@ const Features_product = () => {
       desc: "Apple iPhone 13 Pro Max (128GB,35hrs)",
       image: "featuresProduct3.png",
       icon: "color.svg",
+      type : "feature"
 
     },
     {
@@ -50,34 +45,24 @@ const Features_product = () => {
       desc: "Hp 15S AMD Ryzen 3- 5300U 15.6 Inches",
       image: "featuresProduct4.png",
       icon: "color.svg",
+      type : "feature"
     }
   ]
 
   // New unique id
 
-  //   const [products, setProducts] = useState([])
+    // const [products, setProducts] = useState([])
 
-  //   useEffect(()=>{
-
-  //     console.log('dom paint end')
-
-  //     getProduct().then(res => setProducts(res))
-  //   },[])
-
-
-  //   useLayoutEffect(()=>{
-  //     console.log('dom paint start')
-
-  //   })
-
-  //   const getProduct = () => new Promise((resolve,reject)=>{
-  //       fetch('https://fakestoreapi.com/products')
-  //       .then(res=>res.json())
-  //       .then(result=> resolve(result))
-  //       .catch(err=> reject(err))
-  //   })
+    // const getProduct = () => new Promise((resolve,reject)=>{
+    //     let data = fetch('https://fakestoreapi.com/products')
+    //     .then(res=>res.json())
+    //     .then(result=> resolve(result))
+    //     .catch(err=> reject(err))
+    //     setProducts(data)
+    // })
 
   return (
+    
     <section>
       <div className='container'>
         <div className='features_product'>
@@ -117,7 +102,7 @@ const Features_product = () => {
             {
               product.length > 0 && product.map((item, index) => {
                 return (<Fragment key={`${item.id}_product`}>
-                  <SwiperSlide> <Featurecard product={item} xyz={item.id} /> </SwiperSlide>
+                  <SwiperSlide> <Featurecard product={item} xyz={item.image} /> </SwiperSlide>
                 </Fragment>);
               })
             }

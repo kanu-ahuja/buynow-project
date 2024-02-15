@@ -2,7 +2,6 @@ import React from 'react'
 
 const Addtocart = () => {
 
-  // console.log("add to card working");
   return (
     <>
         <div className="h-screen bg-gray-100 pt-20">

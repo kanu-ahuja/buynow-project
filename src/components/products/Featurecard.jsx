@@ -3,12 +3,12 @@ import React from 'react'
 import Buttoncart from '../Buttons/Buttoncart'
 
 
-const Featurecard = ({ product, xyz }) => {
+const Featurecard = ({ product, xyz}) => {
 
   return (
     <>
       <div className='features_product_items'>
-
+        
         <a href={`/productdetail/${product?.id}`}>
           {
             product?.new &&
@@ -22,33 +22,25 @@ const Featurecard = ({ product, xyz }) => {
               <path d="M17.929 4.04888C14.929 3.54893 12.929 7.04881 11.929 7.04881C10.929 7.0488 9.59575 3.64158 5.92902 4.04885C2.26229 4.45613 0.929029 8.20934 2.929 12.2094C4.92898 16.2094 8.92901 20.0489 11.929 20.0489C14.929 20.0489 18.929 16.2094 20.929 12.2094C22.929 8.20934 20.929 4.54883 17.929 4.04888Z" stroke="#495F6A" strokeWidth="2" />
             </svg>
           </div>
-          <div className='features_product_images'>
-
-
+          <div className='features_product_images' id='color_dooo'>
             {
-              (product.hasOwnProperty('image')) ? (<img src={product?.image} className='features_img' />) : (<img src={require(`../../image/` + product?.image)} className='features_img' />)
+              
+              product?.type == 'feature' ?  <img src={require(`../../image/${product?.image}`)}  alt='error'/> :
+              product?.image !==undefined 
+              ?
+              product?.image?.includes('https')?<img src={product?.image} className='features_img'  alt='error'/>:<img src={`http://localhost:9000/uploads/${product?.image}`} className='features_img'  alt='error'/>
+              :
+              product?.images?.length>0 && product?.images[0]?.includes('https')?<img src={product?.images[0]} className='features_img'  alt='error'/>:<img src={`http://localhost:9000/uploads/${product?.images[0]}`} className='features_img'  alt='error'/>
             }
-
-
-            {/* <img src={product.image} />   */}
+           
           </div>
-          <div className='features_product_dots'>
-            {
-              // product?.icon !== undefined &&
-              // <img src={require(`../../image/` + product?.icon)} className='icons' />
-            }
+          <div className='features_product_dots'> 
           </div>
           <div className='features_product_text'>
             <h4 className='small_body_text'>{product.description}</h4>
           </div>
 
-          <div>
-            {
-              // product?.star !== undefined &&
-              // <img src={require(`../../image/` + product?.star)} className='stars' />
-            }
 
-          </div>
           <div className='features_product_pricebutton'>
             <h2 className='features_product_price'>{product?.price}</h2>
             <div>

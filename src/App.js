@@ -59,17 +59,11 @@ const App = () => {
                 <Route path='/login' element={<Login />} />
                 <Route path='/product/category/:slug' element={<CategoryPage />} />
                 <Route path='/products/' element={<Products />} />
-
                 <Route path='/addcart/' element={<Addtocart /> } />
-                
                 {/* single product  */}
-
                 <Route path='/productdetail/:id' element={<Productdetail />} /> 
-                
-               
-                <Route path='/dashboard/users' element={<Guard><Dashboard /></Guard> }/>
-                <Route path='/dashboard/products' element={<Guard><ProductsManagement /></Guard> }/>
-
+                {/* <Route path='/dashboard/users' element={<Guard><Dashboard /></Guard> }/> */}
+                {/* <Route path='/dashboard/products' element={<Guard><ProductsManagement /></Guard> }/> */}
               </Route>
             </Routes>
             </UserAuth.Provider>

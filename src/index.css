@@ -13,9 +13,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
-
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -48,7 +46,6 @@
   background-color: gray;
 }
 
-
 button,
 input {
   outline: 0;
@@ -72,24 +69,21 @@ a {
 
 /* Hebbo Font-Family */
 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Island+Moments&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Island+Moments&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* Inter Font-Family */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Open Sans*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 
 /* Theme mode dark Light Start with useContext */
 
 body.dark {
   background-color: black;
   color: #fff;
-
 }
 
 body.light {
@@ -100,7 +94,7 @@ body.light {
 .button_img {
   width: 44px;
   height: 44px;
-  background-image: url('../src/image/light.svg');
+  background-image: url("../src/image/light.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -109,11 +103,10 @@ body.light {
 }
 
 body.dark .button_img {
-  background-image: url('../src/image/dark.svg');
+  background-image: url("../src/image/dark.svg");
   border: 2px solid white;
   background-color: antiquewhite;
 }
-
 
 body.dark .logout {
   background-color: paleturquoise;
@@ -130,7 +123,7 @@ body.dark .logout {
 }
 
 .annoucement_bar_link {
-  color: #C4CFD4;
+  color: #c4cfd4;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -143,7 +136,7 @@ body.dark .logout {
 /* Header Common css Start*/
 
 .header_lg_text {
-  color: #495F6A;
+  color: #495f6a;
   font-family: Open Sans;
   font-size: 21px;
   font-style: normal;
@@ -153,7 +146,7 @@ body.dark .logout {
 }
 
 .header_medium_text {
-  color: #495F6A;
+  color: #495f6a;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -179,7 +172,7 @@ body.dark .logout {
 /* Body Common css Start*/
 
 .xxl_body_text {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Heebo;
   font-size: 60px;
   font-style: normal;
@@ -200,7 +193,7 @@ body.dark .logout {
 }
 
 .xl_body_text {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Heebo;
   font-size: 34px;
   font-style: normal;
@@ -211,7 +204,7 @@ body.dark .logout {
 }
 
 .exlarge_body_text {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Heebo;
   font-size: 24px;
   font-style: normal;
@@ -221,7 +214,7 @@ body.dark .logout {
 }
 
 .large_body_text {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Heebo;
   font-size: 20px;
   font-style: normal;
@@ -232,7 +225,7 @@ body.dark .logout {
 }
 
 .medium_body_text {
-  color: #495F6A;
+  color: #495f6a;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -242,7 +235,7 @@ body.dark .logout {
 }
 
 .small_body_text {
-  color: #495F6A;
+  color: #495f6a;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -250,7 +243,6 @@ body.dark .logout {
   line-height: 143%;
   letter-spacing: 0.17px;
 }
-
 
 /* Body Common css End*/
 /* BUTTONS */
@@ -265,7 +257,6 @@ body.dark .logout {
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
-
 
 .normal-button {
   border-radius: 30px;
@@ -302,7 +293,6 @@ button.normal-button.cart-btn-hover span {
 button.normal-button.cart-btn-hover:hover {
   padding: 6px 16px;
   transition: 0.3s;
-
 }
 
 button.normal-button.cart-btn-hover:hover svg {
@@ -315,7 +305,6 @@ button.normal-button.cart-btn-hover:hover span {
   position: static;
   width: 100px;
   transition: 0.3s;
-
 }
 
 /* Footer common css Start*/
@@ -331,7 +320,7 @@ button.normal-button.cart-btn-hover:hover span {
 }
 
 .footer_medium_text {
-  color: #C4CFD4;
+  color: #c4cfd4;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -352,10 +341,7 @@ button.normal-button.cart-btn-hover:hover span {
 
 /* Footer common css End */
 
-
-
 /*  */
-
 
 .annoucement_bar {
   background: var(--primary-color);
@@ -400,7 +386,6 @@ button.normal-button.cart-btn-hover:hover span {
 .navbar_logo_Start {
   display: flex;
   gap: 30px;
-
 }
 
 .header_links_text:hover {
@@ -413,8 +398,6 @@ button.normal-button.cart-btn-hover:hover span {
 .header_links_text {
   padding: 6px 16px 6px;
 }
-
-
 
 .header_Search_box {
   display: flex;
@@ -493,7 +476,7 @@ button.normal-button.cart-btn-hover:hover span {
 
 .Shopping_now_image {
   border-radius: 20px 20px 20px 40px;
-  border: 2px solid var(--light-primary-shades-50-p, rgba(66, 38, 89, 0.50));
+  border: 2px solid var(--light-primary-shades-50-p, rgba(66, 38, 89, 0.5));
   padding: 0px 0px 20px 20px;
 }
 
@@ -523,7 +506,7 @@ button.normal-button.cart-btn-hover:hover span {
 }
 
 .shopping_now_discount {
-  color: #FFB400;
+  color: #ffb400;
 }
 
 .shopping_image {
@@ -536,10 +519,6 @@ button.normal-button.cart-btn-hover:hover span {
 
 .icons {
   max-width: 56px;
-}
-
-.stars {
-  margin-bottom: 20px;
 }
 
 /* Shopping Now Section End */
@@ -564,8 +543,7 @@ button.normal-button.cart-btn-hover:hover span {
 }
 
 .category_navbar {
-
-  color: #495F6A;
+  color: #495f6a;
   padding: 8px 12px;
   white-space: nowrap;
 }
@@ -575,7 +553,6 @@ button.normal-button.cart-btn-hover:hover span {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin: 40px 0px 40px;
-
 }
 
 .watches_collection_headings {
@@ -591,7 +568,6 @@ button.normal-button.cart-btn-hover:hover span {
   /* box-shadow: 0.5px 0.5px 0.5px 0.5px; */
 }
 
-
 .men_watches_collection {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -602,7 +578,6 @@ button.normal-button.cart-btn-hover:hover span {
   display: flex;
   align-items: center;
   padding: 8px 6px;
-
 }
 
 .button_viewall:hover {
@@ -678,7 +653,6 @@ li.header_small_text.category_navbar.active {
   margin: 14px 0px 10px;
 }
 
-
 .features_product_pricebutton {
   display: flex;
   align-items: center;
@@ -690,7 +664,6 @@ li.header_small_text.category_navbar.active {
   display: flex;
   justify-content: center;
 }
-
 
 /* Features Product Section End */
 /* Best Selling Product Section Start */
@@ -714,8 +687,6 @@ li.header_small_text.category_navbar.active {
   background: rgba(66, 38, 89, 0.04);
   padding: 30px;
 }
-
-
 
 .selling_items {
   display: flex;
@@ -753,7 +724,6 @@ li.header_small_text.category_navbar.active {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .best_selling_image {
@@ -777,9 +747,8 @@ li.header_small_text.category_navbar.active {
 }
 
 .best_seller_image {
-  background: url('/src/image/best_seller_imgbig.png');
+  background: url("/src/image/best_seller_imgbig.png");
   background-repeat: no-repeat;
-
 }
 
 /* Best Selling Product Section End */
@@ -801,7 +770,11 @@ li.header_small_text.category_navbar.active {
   padding: 20px;
   border-radius: 20px;
   border: 1px solid rgba(66, 38, 89, 0.08);
-  background: linear-gradient(270deg, rgba(66, 38, 89, 0.04) 0.11%, rgba(66, 38, 89, 0.00) 99.86%);
+  background: linear-gradient(
+    270deg,
+    rgba(66, 38, 89, 0.04) 0.11%,
+    rgba(66, 38, 89, 0) 99.86%
+  );
 }
 
 .discount_image_dots {
@@ -817,7 +790,7 @@ li.header_small_text.category_navbar.active {
 }
 
 .discount_desc {
-  color: #1F292D;
+  color: #1f292d;
 }
 
 .discount_line {
@@ -837,7 +810,9 @@ li.header_small_text.category_navbar.active {
   padding: 5px;
   border-radius: 30px;
   background: var(--secondary-color);
-  box-shadow: 0px 5px 22px 4px rgba(176, 190, 197, 0.12), 0px 12px 17px 2px rgba(176, 190, 197, 0.14), 0px 7px 8px -4px rgba(176, 190, 197, 0.20);
+  box-shadow: 0px 5px 22px 4px rgba(176, 190, 197, 0.12),
+    0px 12px 17px 2px rgba(176, 190, 197, 0.14),
+    0px 7px 8px -4px rgba(176, 190, 197, 0.2);
   max-width: 115px;
   width: 100%;
 }
@@ -866,18 +841,12 @@ li.header_small_text.category_navbar.active {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  display: flex
+  display: flex;
 }
 
 .top_brands_text {
   display: flex;
   justify-content: space-between;
-}
-
-.top_brand_collection {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px; */
 }
 
 /* Top_brand End */
@@ -896,12 +865,6 @@ li.header_small_text.category_navbar.active {
   padding-bottom: 40px;
 }
 
-.new_arrival_collection {
-  /* display: grid; */
-  /* grid-template-columns: repeat(4, 1fr); */
-  /* gap: 24px; */
-}
-
 /* new_arrival End */
 
 /* Bluetooth Headphones Section Start */
@@ -911,18 +874,16 @@ li.header_small_text.category_navbar.active {
   display: flex;
   gap: 94px;
   border-radius: 20px;
-  background-image: url('../src/image/CTA\ Banner.png');
+  background-image: url("../src/image/CTA\ Banner.png");
   background-repeat: no-repeat;
-
 }
-
 
 .text {
   color: var(--secondary-color);
 }
 
 .blutooth_text {
-  color: #FFB400;
+  color: #ffb400;
 }
 
 .bluetooth_bigtext {
@@ -949,7 +910,7 @@ li.header_small_text.category_navbar.active {
 }
 
 .Bluetooth_button {
-  color: #C4CFD4;
+  color: #c4cfd4;
   background: transparent;
 }
 
@@ -978,7 +939,7 @@ li.header_small_text.category_navbar.active {
 }
 
 .our_partner_text {
-  color: #495F6A;
+  color: #495f6a;
 }
 
 .our_partner_collection {
@@ -1008,8 +969,6 @@ li.header_small_text.category_navbar.active {
   z-index: 1;
   position: relative;
 }
-
-
 
 .newletter_image {
   max-width: 60px;
@@ -1050,10 +1009,9 @@ li.header_small_text.category_navbar.active {
 
 /* Subscribe to Newletter End */
 
-
 /* New CSS Start*/
 .new_text {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
@@ -1066,13 +1024,12 @@ li.header_small_text.category_navbar.active {
 .New_icon {
   position: absolute;
   border-radius: 64px;
-  background: #ED6C02;
+  background: #ed6c02;
   top: 3%;
   right: 42px;
 }
 
 /* Category Product Collection End */
-
 
 /* Relates Items Section Start */
 .relative_items {
@@ -1104,13 +1061,11 @@ li.header_small_text.category_navbar.active {
   left: 20px;
   top: 20px;
   border-radius: 64px;
-  background: #ED6C02;
+  background: #ed6c02;
 }
 
 .related_collection {
-  /* display: grid; */
   position: relative;
-  /* grid-template-columns: repeat(4, 1fr); */
   gap: 24px;
 }
 
@@ -1130,6 +1085,15 @@ li.header_small_text.category_navbar.active {
   gap: 8px;
   padding: 6px 8px;
 }
+.addcard_button {
+  background: #422659;
+}
+
+.stars {
+  color: #422659;
+  align-items: center;
+  display: flex;
+}
 
 .relates_button:hover {
   background: var(--secondary-color);
@@ -1138,7 +1102,6 @@ li.header_small_text.category_navbar.active {
 .relates_item_button {
   display: flex;
   gap: 80px;
-
 }
 
 .relates_text {
@@ -1165,8 +1128,6 @@ footer {
   gap: 167px;
 }
 
-
-
 .footer_icon {
   max-width: 22px;
   height: 22px;
@@ -1175,9 +1136,8 @@ footer {
 .footer_about {
   display: flex;
   gap: 40px;
-  padding-bottom: 40px
+  padding-bottom: 40px;
 }
-
 
 .footer_brand {
   display: flex;
@@ -1188,7 +1148,7 @@ footer {
 .footer_line {
   border-radius: 5px;
   height: 1px;
-  background: #ABB5BA;
+  background: #abb5ba;
   margin: 16px 0px;
 }
 
@@ -1245,13 +1205,13 @@ footer {
 
 .footer_line {
   border-radius: 5px;
-  background: #ABB5BA;
+  background: #abb5ba;
   height: 1px;
   margin: 40px 0px;
 }
 
 .footer_last_text {
-  color: #C4CFD4;
+  color: #c4cfd4;
 }
 
 .footer_last {
@@ -1266,8 +1226,7 @@ footer {
 }
 
 footer:after {
-  content: '';
-
+  content: "";
   background: rgba(105, 62, 142, 0.08);
   z-index: -1;
   position: absolute;
@@ -1277,7 +1236,6 @@ footer:after {
   height: calc(50% + 100px);
   transform: translateY(-50%);
 }
-
 
 a.footer_medium_text:hover {
   text-decoration: underline;
@@ -1289,9 +1247,15 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   color: #fff;
 }
 
+.color_alldots {
+  max-width: 41px;
+  width: 100%;
+  outline: 5px solid black;
+}
+
 /* Footer End */
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width: 1100px) {
   .header_end {
     gap: 15px;
   }
@@ -1323,7 +1287,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 
   /* Best_selling Start */
 
-
   .bluetooth_headphones_img {
     padding: 31px 54px 30px 0px;
   }
@@ -1353,8 +1316,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   /* Best_selling End */
 }
 
-@media screen and (max-width:991px) {
-
+@media screen and (max-width: 991px) {
   .header_links_text {
     padding: 5px 9px 6px;
   }
@@ -1407,7 +1369,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 
   .footer_section {
     gap: 71px;
-
   }
 
   .bluetooth_headphones {
@@ -1461,8 +1422,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   }
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .header_links,
   .mobile_items {
     display: none;
@@ -1471,7 +1431,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   .mobile_items_collection {
     display: none;
   }
-
 
   .Shopping_now {
     padding: 30px 0px 50px;
@@ -1591,7 +1550,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   }
 }
 
-@media screen and (max-width:391px) {
+@media screen and (max-width: 391px) {
   .search_icon {
     display: flex;
   }
@@ -1616,7 +1575,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   .headphones_text {
     padding: 20px 10px 20px;
   }
-
 
   /* Category Product Collection Start*/
   .watches_collection {
@@ -1791,7 +1749,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   }
 }
 
-
 /* Form css Start */
 
 .form___container {
@@ -1891,7 +1848,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .category_logo {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Heebo;
   font-size: 20px;
   font-style: normal;
@@ -1931,7 +1888,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .product_list {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -1956,7 +1913,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .products_items {
-  color: #495F6A;
+  color: #495f6a;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -1985,7 +1942,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .slider_items {
-  color: #495F6A;
+  color: #495f6a;
   text-align: center;
   font-family: Inter;
   font-size: 14px;
@@ -2031,7 +1988,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .discount {
-  color: #495F6A;
+  color: #495f6a;
   text-align: center;
   font-family: Inter;
   font-size: 14px;
@@ -2047,7 +2004,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .brand_logo {
-  color: #1F292D;
+  color: #1f292d;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -2161,8 +2118,8 @@ td {
   width: 100%;
   padding: 16px;
   border-radius: 8px;
-  border: 1px solid #CCC;
-  background: #FFF;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 
 .login_form {
@@ -2214,9 +2171,9 @@ button.header_search_button {
   display: flex;
   justify-content: space-between;
 }
-body.dark .dashboard_table{
-    background: var(--secondary-color);
-    color: black;
+body.dark .dashboard_table {
+  background: var(--secondary-color);
+  color: black;
 }
 
 /* Admin Product CSS End */

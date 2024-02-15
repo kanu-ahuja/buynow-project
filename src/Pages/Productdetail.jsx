@@ -15,7 +15,7 @@ const Productdetail = () => {
   }, [])
 
   const singleuser = async () => {
-    let data = await fetch('http://localhost:9000/getProductbyid/'+id)
+  let data = await fetch('http://localhost:9000/getProductbyid/'+id)
     if(!data.ok){
       setNotFound(true)
       return;
@@ -26,7 +26,6 @@ const Productdetail = () => {
 
   return (
     <div>
-      
       {notfound && (notfound) ? <div className='container'>Not Found!</div> : <Mainbanner item={singledata} /> }
       
     </div>

@@ -13,6 +13,7 @@ const New_arrival_products = () => {
     let product = [
         {
             id: uuidv4(),
+             type:"feature",
             title: "Product 1",
             price: "$222.00",
             desc: "Headphones",
@@ -22,6 +23,7 @@ const New_arrival_products = () => {
         },
         {
             id: uuidv4(),
+             type:"feature",
             title: "Product 2",
             price: "$203.00",
             desc: "Apple Laptop",
@@ -30,6 +32,7 @@ const New_arrival_products = () => {
         },
         {
             id: uuidv4(),
+             type:"feature",
             title: "Product 3",
             price: "$102.00",
             desc: "Smart phone",
@@ -38,6 +41,7 @@ const New_arrival_products = () => {
         },
         {
             id: uuidv4(),
+             type:"feature",
             title: "Product 4",
             price: "$300.00",
             desc: "Smart phone",
