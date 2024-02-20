@@ -4,7 +4,6 @@ import footericon from '../../image/footericon.png'
 import dowload1 from '../../image/DownloadButton1.png'
 import dowload2 from '../../image/DownloadButton2.png'
 
-
 const Footer = () => {
   return (
     <>
@@ -13,7 +12,6 @@ const Footer = () => {
           <div className='subscribe_to_newsletter'>
             <div className='newletter_text'>
               <img src={newletter} className='newletter_image' alt='error'/>
-
               <div>
                 <h1 className='xl_body_text subscribe_text'>Subscribe to our newsletter</h1>
                 <div className='newletter_discount'>

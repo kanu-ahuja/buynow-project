@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
 import Mainbanner from '../product/mainbanner';
+import Addtocart from './addtocart';
 
 const Productdetail = () => {
   const [singledata, setSingledata] = useState({})
@@ -15,8 +16,10 @@ const Productdetail = () => {
   }, [])
 
   const singleuser = async () => {
-  let data = await fetch('http://localhost:9000/getProductbyid/'+id)
-    if(!data.ok){
+    
+  let data = await fetch('https://dummyjson.com/products/'+ id)
+  setSingledata(data)
+    if(!data?.ok){
       setNotFound(true)
       return;
     }
@@ -26,8 +29,7 @@ const Productdetail = () => {
 
   return (
     <div>
-      {notfound && (notfound) ? <div className='container'>Not Found!</div> : <Mainbanner item={singledata} /> }
-      
+      {notfound && (notfound) ? <div className='container'>Not Found!</div> : <Mainbanner item={singledata}/> }
     </div>
   )
 }

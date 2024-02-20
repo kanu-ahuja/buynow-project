@@ -3,15 +3,13 @@ import Featurecard from '../components/products/Featurecard';
 
 
 const Products = () => {
-
     const [products, setProd] = useState([])
-
+ 
     useEffect(() => {
         getProductBycat()
     }, [])
-
     const getProductBycat = async () => {
-        let data = await fetch('http://localhost:9000/getProduct')
+        let data = await fetch('https://dummyjson.com/products')
             .then(res => res.json())
         setProd(data.products)
     }

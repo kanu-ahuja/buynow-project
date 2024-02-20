@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Addtocart = () => {
-
+const Addtocart = ({itemaddcart}) => {
+  console.log(itemaddcart,'---');
   return (
     <>
         <div className="h-screen bg-gray-100 pt-20">

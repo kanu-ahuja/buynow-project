@@ -17,7 +17,7 @@ const ProductsManagement = () => {
     }, [])
 
     async function fetchAlldata() {
-        let getalldata = await fetch('http://localhost:9000/getProduct').then(res => res.json())
+        let getalldata = await fetch('hhttps://dummyjson.com/products').then(res => res.json())
         setGetdata(getalldata)
     }
 

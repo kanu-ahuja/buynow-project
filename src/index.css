@@ -82,7 +82,7 @@ a {
 /* Theme mode dark Light Start with useContext */
 
 body.dark {
-  background-color: black;
+  background-color: #111;
   color: #fff;
 }
 
@@ -528,6 +528,13 @@ button.normal-button.cart-btn-hover:hover span {
 .category_product_collection {
   margin: 0px 0px 80px;
 }
+.category_grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  height: 100%;
+}
 
 .desktop_screen {
   display: none;
@@ -560,12 +567,10 @@ button.normal-button.cart-btn-hover:hover span {
   padding: 20px;
   border-radius: 20px;
   border: 1px solid rgba(66, 38, 89, 0.08);
-  /* background: rgba(237, 95, 96, 0.04); */
 }
 
 .watches_collection_headings:hover {
   background: rgba(237, 95, 96, 0.04);
-  /* box-shadow: 0.5px 0.5px 0.5px 0.5px; */
 }
 
 .men_watches_collection {
@@ -613,9 +618,6 @@ li.header_small_text.category_navbar.active {
 }
 
 .features_product_collection {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px; */
   margin-bottom: 40px;
 }
 
@@ -643,7 +645,9 @@ li.header_small_text.category_navbar.active {
   max-height: 160px;
   object-fit: contain;
 }
-
+.feature_image{
+  max-height: 149px;
+}
 .features_product_dots {
   display: flex;
   justify-content: center;
@@ -798,12 +802,17 @@ li.header_small_text.category_navbar.active {
   background: rgba(66, 38, 89, 0.08);
   height: 1px;
 }
-
-.imgdots {
-  max-width: 15px;
-  width: 100%;
+.color_data{
+  border-radius: 50%;
+  background-color: #2aa585;
+  width: 20px;
+  height: 20px;
 }
-
+.color_dots{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 15px;
+}
 .discount_Dots {
   display: flex;
   gap: 15px;
@@ -1420,6 +1429,10 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   li.header_small_text.category_navbar.category_links.active {
     border: none;
   }
+  .category_grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -1480,7 +1493,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
     gap: 6px;
     overflow: auto;
   }
-
+ 
   /*Features Product Section Start*/
   .mobile_Screen {
     display: none;
@@ -1548,13 +1561,23 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   .xl_body_text {
     white-space: nowrap;
   }
+  .products_category{
+    flex-direction: column;
+  }
+  .side_list{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 391px) {
   .search_icon {
     display: flex;
   }
-
+  .category_grid{
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+ 
   .navbar_logo_Start {
     display: flex;
     gap: 6px;
@@ -1804,13 +1827,6 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   overflow: auto;
 }
 
-.category_grid {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  position: relative;
-  height: 100%;
-}
 
 .ajax___loader {
   position: absolute;
@@ -1845,6 +1861,7 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   border-radius: 20px;
   border: 1px solid rgba(66, 38, 89, 0.08);
   padding: 20px;
+  height: 70vh;
 }
 
 .category_logo {
@@ -1957,10 +1974,8 @@ li.small_body_text.footer_last_text.footer_hover:hover {
   justify-content: space-between;
 }
 
-.color_dots {
-  display: flex;
-  gap: 15px;
-}
+
+
 
 .all_item {
   color: #422659;
