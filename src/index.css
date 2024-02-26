@@ -1814,13 +1814,13 @@ li.small_body_text.footer_last_text.footer_hover:hover {
 }
 
 .logout {
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   background-image: url(/src/image/logout.png);
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 30px;
-  border: 1px solid rgba(66, 38, 89, 0.08);
+  /* border-radius: 30px; */
+  /* border: 1px solid rgba(66, 38, 89, 0.08); */
 }
 
 .category_product_navbar {
