@@ -62,7 +62,7 @@ const Login = () => {
                 {
                     (session === null) ? (
                         <>
-                            <fieldset className='register_Form'>
+                            {/* <fieldset className='register_Form'>
                                 <legend className='form_heading'>Register</legend>
                                 <form onSubmit={registerMethod}>
                                     <label>Email : </label>
@@ -71,7 +71,7 @@ const Login = () => {
                                     <input placeholder='Enter your password...' type='password' name='password' onChange={(e) => r_databind(e)} value={regsiterData.password} />
                                     <input type='submit' value={'Register'} />
                                 </form>
-                            </fieldset>
+                            </fieldset> */}
 
                             <fieldset className='login_Form'>
                                 <legend className='form_heading'>Login</legend>
