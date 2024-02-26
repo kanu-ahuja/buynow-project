@@ -30,18 +30,18 @@ const App = () => {
       let themeMode = (usepreference) ? usepreference : theme;
       bodyclass.add(themeMode)
     }
-    if (bodyclass.contains('dark')) {
-      bodyclass.remove('dark')
-      bodyclass.add('light');
-      localStorage.setItem('theme', 'light')
-      return
-    }
-    if (bodyclass.contains('light')) {
-      bodyclass.remove('light')
-      bodyclass.add('dark');
-      localStorage.setItem('theme', 'dark')
-      return
-    }
+    // if (bodyclass.contains('dark')) {
+    //   bodyclass.remove('dark')
+    //   bodyclass.add('light');
+    //   localStorage.setItem('theme', 'light')
+    //   return
+    // }
+    // if (bodyclass.contains('light')) {
+    //   bodyclass.remove('light')
+    //   bodyclass.add('dark');
+    //   localStorage.setItem('theme', 'dark')
+    //   return
+    // }
   }, [theme, setTheme])
 
 

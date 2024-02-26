@@ -170,11 +170,11 @@ const Header = () => {
                 </div>
 
 
-                <button className="button_img"
+                {/* <button className="button_img"
                   onClick={() => {
                     setTheme(rev => (rev === 'light') ? 'dark' : 'light')
                   }}
-                ></button>
+                ></button> */}
 
                 {session && <button className="logout" onClick={logout}></button>}
 
