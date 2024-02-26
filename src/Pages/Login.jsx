@@ -10,7 +10,7 @@ const Login = () => {
 
     // initlization step
     let rinitData = { email: "", password: "" }
-    let linitData = { email: "", password: "" }
+    let linitData = { email: "eve.holt@reqres.in", password: "cityslicka" }
     let [loginData, setloginData] = useState(linitData)
     let [regsiterData, setregsiterData] = useState(rinitData)
 
